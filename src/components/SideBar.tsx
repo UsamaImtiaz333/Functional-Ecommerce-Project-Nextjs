@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRight } from "lucide-react"; // sirf arrow icon ke liye
+import { ChevronRight } from "lucide-react";
 
 function SideBar() {
   const items = [
@@ -15,15 +15,14 @@ function SideBar() {
   ];
 
   return (
-    <aside className="w-64 bg-white">
-      <ul className="flex flex-col">
+    <aside className="w-64 bg-white mt-4">
+      <ul className="flex flex-col font-bold text-lg">
         {items.map((item, index) => (
           <li
             key={index}
-            className="flex items-center mt-1 justify-between px-3 py-2 cursor-pointer text-gray-700 hover:text-black hover:bg-gray-50 transition"
+            className="flex items-center mt-1 justify-between py-2 cursor-pointer text-gray-700 hover:text-black hover:bg-gray-50 transition"
           >
             <span>{item}</span>
-            {/* 👇 Sirf pehle 2 items par arrow */}
             {index < 2 && <ChevronRight className="w-4 h-4 text-gray-400" />}
           </li>
         ))}

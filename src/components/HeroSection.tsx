@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 
 const slides = [
@@ -33,28 +32,28 @@ export default function HeroSection() {
   }, [currentSlide]);
 
   return (
-    <div className="flex flex-col items-center mt-2">
+    <div className="w-full flex-1 flex justify-center items-start py-8 overflow-hidden relative">
       {/* Slider Container */}
-      <div className="w-full max-w-5xl overflow-hidden relative bg-gray-100">
+      <div className="w-full h-[400px] relative">
         <div
           ref={sliderRef}
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out w-full h-full"
         >
           {slides.map((src, i) => (
             <div
               key={i}
-              className="w-full h-64 md:h-80 lg:h-96 flex items-center justify-center bg-white flex-shrink-0"
+              className="w-full h-full flex-shrink-0 flex justify-center items-center bg-gray-100"
             >
               <img
                 src={src}
                 alt={`Slide ${i + 1}`}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           ))}
         </div>
 
-        {/* 👇 Dots andar, bottom-center */}
+        {/* Dots */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
           {slides.map((_, i) => (
             <span
