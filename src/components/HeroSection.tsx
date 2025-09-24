@@ -60,7 +60,7 @@ export default function HeroSection() {
               key={i}
               onClick={() => setCurrentSlide(i)}
               className={`w-3 h-3 rounded-full cursor-pointer ${
-                currentSlide === i ? "bg-red-700" : "bg-black/20"
+                currentSlide === i ? "bg-[#DB4444]" : "bg-black/20"
               }`}
             ></span>
           ))}

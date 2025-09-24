@@ -19,16 +19,16 @@ const Navbar = () => {
 
       {/* Desktop Menu (centered links) */}
       <div className="hidden sm:flex flex-1 items-center justify-center gap-8">
-        <a href="#" className="hover:text-indigo-500 transition">
+        <a href="#" className="hover:text-[#DB4444] transition">
           Home
         </a>
-        <a href="#" className="hover:text-indigo-500 transition">
+        <a href="#" className="hover:text-[#DB4444] transition">
           About
         </a>
-        <a href="#" className="hover:text-indigo-500 transition">
+        <a href="#" className="hover:text-[#DB4444] transition">
           Contact
         </a>
-        <a href="#" className="hover:text-indigo-500 transition">
+        <a href="#" className="hover:text-[#DB4444] transition">
           Sign Up
         </a>
       </div>
@@ -39,12 +39,12 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center relative">
           <Input
             type="text"
-            placeholder="Search products"
-            className="w-64 pl-6 pr-4 py-2 bg-transparent border border-gray-300 rounded-full placeholder-gray-500"
+            placeholder="What are you looking for?"
+            className="w-64 pl-4 py-2 bg-gray-100 border border-gray-300 placeholder-gray-300 placeholder:font-medium"
           />
           <FiSearch
             size={20}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500"
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500"
           />
         </div>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* Cart */}
         <div className="relative cursor-pointer">
           <PiShoppingCartThin size={26} />
-          <span className="absolute -top-3 -right-2 flex items-center justify-center text-md font-bold text-red-700 w-[18px] h-[18px] rounded-full">
+          <span className="absolute -top-3 -right-2 flex items-center justify-center text-md font-bold text-[#DB4444] w-[18px] h-[18px] rounded-full">
             3
           </span>
         </div>

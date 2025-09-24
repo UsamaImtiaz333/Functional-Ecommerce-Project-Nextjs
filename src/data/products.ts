@@ -22,7 +22,7 @@ export const productsData: Product[] = [
     image:
       "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImageWithoutBg.png",
   },
-  ...Array(10).fill({
+  ...Array(4).fill({
     name: "Gaming Mouse Pro",
     price: 800,
     offerPrice: 600,

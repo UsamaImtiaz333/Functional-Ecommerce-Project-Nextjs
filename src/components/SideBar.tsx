@@ -20,7 +20,7 @@ function SideBar() {
         {items.map((item, index) => (
           <li
             key={index}
-            className="flex items-center mt-1 justify-between py-2 cursor-pointer text-gray-700 hover:text-black hover:bg-gray-50 transition"
+            className="flex items-center mt-1 justify-between py-2 cursor-pointer text-gray-700 hover:text-[#DB4444] hover:bg-gray-50 transition"
           >
             <span>{item}</span>
             {index < 2 && <ChevronRight className="w-4 h-4 text-gray-400" />}

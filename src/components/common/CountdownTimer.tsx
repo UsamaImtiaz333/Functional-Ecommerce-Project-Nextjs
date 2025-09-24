@@ -49,7 +49,7 @@ export default function CountdownTimer() {
         <span className="text-2xl font-bold">{String(timeLeft.days).padStart(2, "0")}</span>
       </div>
 
-      <span className="text-red-400 text-2xl">:</span>
+      <span className="text-[#DB4444] text-2xl">:</span>
 
       {/* Hours */}
       <div className="flex flex-col items-center">
@@ -57,7 +57,7 @@ export default function CountdownTimer() {
         <span className="text-2xl font-bold">{String(timeLeft.hours).padStart(2, "0")}</span>
       </div>
 
-      <span className="text-red-400 text-2xl">:</span>
+      <span className="text-[#DB4444] text-2xl">:</span>
 
       {/* Minutes */}
       <div className="flex flex-col items-center">
@@ -65,7 +65,7 @@ export default function CountdownTimer() {
         <span className="text-2xl font-bold">{String(timeLeft.minutes).padStart(2, "0")}</span>
       </div>
 
-      <span className="text-red-400 text-2xl">:</span>
+      <span className="text-[#DB4444] text-2xl">:</span>
 
       {/* Seconds */}
       <div className="flex flex-col items-center">
