@@ -15,7 +15,7 @@ function SideBar() {
   ];
 
   return (
-    <aside className="w-64 bg-white mt-4">
+    <aside className="w-64 bg-white mt-4 tracking-wider">
       <ul className="flex flex-col font-bold text-lg">
         {items.map((item, index) => (
           <li
