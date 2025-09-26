@@ -5,6 +5,8 @@ import ProductCard from "@/components/common/ProductCard";
 import { productsData } from "@/data/products";
 import CategoriesCard from "@/components/common/CategoriesCard";
 import CategoryBanner from "@/components/CategoryBanner";
+import CategoryShop from "@/components/CategoryShop";
+import CompanyFeedBack from "@/components/CompanyFeedBack";
 
 export default function Home() {
   return (
@@ -75,8 +77,11 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-10">
         <ProductsRow title="featured" heading="New Arrival" rightControl="none">
-          this is a project
+          <CategoryShop/>
         </ProductsRow>
+      </div>
+      <div>
+        <CompanyFeedBack/>
       </div>
     </div>
   );
