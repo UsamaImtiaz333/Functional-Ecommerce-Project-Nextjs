@@ -6,6 +6,7 @@ import { FiSearch } from "react-icons/fi";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Burger from "@/icons/Burger";
+import Link from "next/link";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,30 +14,30 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
       {/* Logo / Brand */}
-      <a
-        href="https://prebuiltui.com"
+      <Link
+        href="/"
         className="
     font-bold
     text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
   "
       >
         Exclusive
-      </a>
+      </Link>
 
       {/* Desktop Menu (centered links) */}
       <div className="hidden sm:flex flex-1 items-center justify-center gap-8">
-        <a href="#" className="hover:text-[#DB4444] transition">
+        <Link href="/" className="hover:text-[#DB4444] transition">
           Home
-        </a>
+        </Link>
         <a href="#" className="hover:text-[#DB4444] transition">
           About
         </a>
         <a href="#" className="hover:text-[#DB4444] transition">
           Contact
         </a>
-        <a href="#" className="hover:text-[#DB4444] transition">
+        <Link href="/signup" className="hover:text-[#DB4444] transition">
           Sign Up
-        </a>
+        </Link>
       </div>
 
       {/* Right side icons */}

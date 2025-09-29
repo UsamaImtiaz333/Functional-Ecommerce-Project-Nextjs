@@ -8,7 +8,7 @@ import CategoryBanner from "@/components/CategoryBanner";
 import CategoryShop from "@/components/CategoryShop";
 import CompanyFeedBack from "@/components/CompanyFeedBack";
 
-export default function Home() {
+export default function page() {
   return (
     <div className="max-w-[1900px] mx-auto px-6 md:px-16 lg:px-24 xl:px-32">
       <div className="flex flex-row justify-center items-start">

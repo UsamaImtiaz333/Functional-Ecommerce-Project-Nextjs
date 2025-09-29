@@ -7,7 +7,10 @@ import React from "react";
 
 const LoginPage = () => {
   return (
-    <AuthWrapper title="Log in to Exclusive" subtitle="Enter your details below">
+    <AuthWrapper
+      title="Log in to Exclusive"
+      subtitle="Enter your details below"
+    >
       <form className="space-y-6 sm:space-y-8">
         {/* Email / Phone */}
         <Input
@@ -57,7 +60,10 @@ const LoginPage = () => {
       {/* Footer */}
       <p className="text-xs sm:text-sm md:text-base text-center">
         Don’t have an account?{" "}
-        <Link href="/signup" className="text-[#DB4444] font-medium hover:underline">
+        <Link
+          href="/signup"
+          className="text-[#DB4444] font-medium hover:underline"
+        >
           Sign Up
         </Link>
       </p>

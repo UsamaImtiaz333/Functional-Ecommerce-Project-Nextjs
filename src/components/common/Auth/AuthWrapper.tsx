@@ -1,5 +1,6 @@
 "use client";
 import React, { ReactNode } from "react";
+import Image from "next/image"; // ✅ Next.js Image import
 
 interface AuthWrapperProps {
   children: ReactNode;
@@ -16,9 +17,11 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Left Side - Image (Hidden on mobile) */}
       <div className="hidden md:flex w-1/2 bg-gray-200">
-        <img
+        <Image
           src="/SideImage.jpg"
           alt="Auth Banner"
+          width={800}   // ✅ just a safe placeholder (Next.js requires)
+          height={1000} // ✅ safe placeholder
           className="w-full h-full object-cover"
         />
       </div>
@@ -29,10 +32,10 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({
           {title && (
             <h1
               className="
-    font-bold
-    text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
-    text-center md:text-left
-  "
+                font-bold
+                text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+                text-center md:text-left
+              "
             >
               {title}
             </h1>

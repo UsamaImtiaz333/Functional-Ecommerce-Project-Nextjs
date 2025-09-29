@@ -72,7 +72,7 @@ export default function Footer() {
             <div className="w-20 h-20 bg-gray-700 flex items-center justify-center">
               QR
             </div>
-            <div className="flex flex-col gap-2">
+            {/* <div className="flex flex-col gap-2">
               <img
                 src="/google-play.png"
                 alt="Google Play"
@@ -83,7 +83,7 @@ export default function Footer() {
                 alt="App Store"
                 className="w-28"
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Social Icons */}
