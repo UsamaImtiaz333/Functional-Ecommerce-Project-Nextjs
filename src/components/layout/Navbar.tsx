@@ -13,7 +13,13 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
       {/* Logo / Brand */}
-      <a href="https://prebuiltui.com" className="text-xl font-bold">
+      <a
+        href="https://prebuiltui.com"
+        className="
+    font-bold
+    text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+  "
+      >
         Exclusive
       </a>
 

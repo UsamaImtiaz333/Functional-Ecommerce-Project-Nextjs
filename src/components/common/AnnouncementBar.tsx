@@ -10,18 +10,39 @@ import {
 function AnnouncementBar() {
   return (
     <aside
-      className="relative flex items-center bg-black text-white px-4 sm:px-8 py-2"
+      className="
+        flex items-center justify-between 
+        bg-black text-white 
+        px-2 sm:px-4 md:px-8 lg:px-12 
+        py-1 sm:py-2
+      "
       aria-label="Announcement Bar"
     >
       {/* Centered Text + CTA */}
-      <div className="absolute left-1/2 -translate-x-1/2 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center">
-        <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-         Summer Sale For All Swim Suits And Free Express Delivery -
+      <div
+        className="
+          flex flex-col sm:flex-row 
+          items-center justify-center 
+          gap-1 sm:gap-2 md:gap-4 
+          text-center mx-auto
+        "
+      >
+        <p
+          className="
+            text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 
+            leading-snug sm:leading-normal
+          "
+        >
+          Summer Sale For All Swim Suits And Free Express Delivery –{" "}
           <strong>50% OFF!</strong>
         </p>
         <a
           href="/sale"
-          className="font-bold text-xs sm:text-sm md:text-base underline underline-offset-2 hover:text-gray-300"
+          className="
+            font-bold 
+            text-[10px] sm:text-xs md:text-sm lg:text-base 
+            underline underline-offset-2 hover:text-gray-300
+          "
         >
           Shop Now
         </a>
@@ -31,13 +52,18 @@ function AnnouncementBar() {
       <div className="ml-auto">
         <Select defaultValue="en">
           <SelectTrigger
-            className="w-[120px] sm:w-[150px] md:w-[180px] 
-               border-0 shadow-none bg-transparent 
-               py-1 px-2 
-               flex gap-x-1 justify-center font-bold text-xs sm:text-sm md:text-base text-white
-               focus:outline-none focus:ring-0 focus:ring-offset-0
-               data-[state=open]:outline-none data-[state=open]:ring-0 data-[state=open]:border-0
-               focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="
+              w-[90px] sm:w-[120px] md:w-[150px] lg:w-[180px]
+              border-0 shadow-none bg-transparent 
+              py-0.5 sm:py-1 px-1 sm:px-2 
+              flex gap-x-1 justify-center 
+              font-bold 
+              text-[10px] sm:text-xs md:text-sm lg:text-base 
+              text-white
+              focus:outline-none focus:ring-0 focus:ring-offset-0
+              data-[state=open]:outline-none data-[state=open]:ring-0 data-[state=open]:border-0
+              focus-visible:ring-0 focus-visible:ring-offset-0
+            "
           >
             <SelectValue placeholder="English" />
           </SelectTrigger>
