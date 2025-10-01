@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Image from "next/image"; // ✅ Next.js Image
 import { Button } from "./ui/button";
 import CountdownTimer from "./common/CountdownTimer";
