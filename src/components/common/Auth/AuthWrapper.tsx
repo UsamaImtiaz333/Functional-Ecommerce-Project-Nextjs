@@ -23,6 +23,7 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({
           width={800}   // ✅ just a safe placeholder (Next.js requires)
           height={1000} // ✅ safe placeholder
           className="w-full h-full object-cover"
+          priority   
         />
       </div>
 
