@@ -9,8 +9,8 @@ interface TimeLeft {
 }
 
 export default function CountdownTimer() {
-  // 👇 Target date set karo
-  const targetDate = new Date("2025-09-30T23:59:59").getTime();
+  // 🎯 Set your target date here (future date)
+  const targetDate = new Date("2025-12-31T23:59:59").getTime();
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -42,35 +42,43 @@ export default function CountdownTimer() {
   }, [targetDate]);
 
   return (
-    <div className="flex gap-6 mt-4">
+    <div className="flex flex-wrap justify-center items-center gap-6 mt-4 text-center">
       {/* Days */}
-      <div className="flex flex-col items-center">
-        <span className="text-sm text-black font-medium">Days</span>
-        <span className="text-2xl font-bold">{String(timeLeft.days).padStart(2, "0")}</span>
+      <div className="flex flex-col items-center bg-gray-50 p-3 rounded-xl shadow-sm w-20">
+        <span className="text-sm text-gray-600 font-medium">Days</span>
+        <span className="text-2xl font-bold text-black">
+          {String(timeLeft.days).padStart(2, "0")}
+        </span>
       </div>
 
-      <span className="text-[#DB4444] text-2xl">:</span>
+      <span className="text-[#DB4444] text-2xl font-bold">:</span>
 
       {/* Hours */}
-      <div className="flex flex-col items-center">
-        <span className="text-sm text-black font-medium">Hours</span>
-        <span className="text-2xl font-bold">{String(timeLeft.hours).padStart(2, "0")}</span>
+      <div className="flex flex-col items-center bg-gray-50 p-3 rounded-xl shadow-sm w-20">
+        <span className="text-sm text-gray-600 font-medium">Hours</span>
+        <span className="text-2xl font-bold text-black">
+          {String(timeLeft.hours).padStart(2, "0")}
+        </span>
       </div>
 
-      <span className="text-[#DB4444] text-2xl">:</span>
+      <span className="text-[#DB4444] text-2xl font-bold">:</span>
 
       {/* Minutes */}
-      <div className="flex flex-col items-center">
-        <span className="text-sm text-black font-medium">Minutes</span>
-        <span className="text-2xl font-bold">{String(timeLeft.minutes).padStart(2, "0")}</span>
+      <div className="flex flex-col items-center bg-gray-50 p-3 rounded-xl shadow-sm w-20">
+        <span className="text-sm text-gray-600 font-medium">Minutes</span>
+        <span className="text-2xl font-bold text-black">
+          {String(timeLeft.minutes).padStart(2, "0")}
+        </span>
       </div>
 
-      <span className="text-[#DB4444] text-2xl">:</span>
+      <span className="text-[#DB4444] text-2xl font-bold">:</span>
 
       {/* Seconds */}
-      <div className="flex flex-col items-center">
-        <span className="text-sm text-black font-medium">Seconds</span>
-        <span className="text-2xl font-bold">{String(timeLeft.seconds).padStart(2, "0")}</span>
+      <div className="flex flex-col items-center bg-gray-50 p-3 rounded-xl shadow-sm w-20">
+        <span className="text-sm text-gray-600 font-medium">Seconds</span>
+        <span className="text-2xl font-bold text-black">
+          {String(timeLeft.seconds).padStart(2, "0")}
+        </span>
       </div>
     </div>
   );
