@@ -1,7 +1,9 @@
-function page() {
+import ForgetPasswordPage from "@/pages/ForgetPasswordPage"
+
+function ForgetPassword() {
   return (
-    <div>page</div>
+    <ForgetPasswordPage/>
   )
 }
 
-export default page
+export default ForgetPassword
